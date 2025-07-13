@@ -1,96 +1,3 @@
-
-
-// // File: components/ThreeDSection.js
-// import Image from 'next/image';
-// import Link from 'next/link';
-
-// export default function ThreeDSection() {
-//   const itemsSet1 = [
-//     {
-//       title: 'Držiaky',
-//       href: '/3d-produkty',
-//       description: 'Originálny držiak na okuliare',
-//       image: '/assets/images/glassesholder.png',
-//       alt: 'Držiak na okuliare'
-//     },
-//     {
-//       title: 'Misky',
-//       href: '/3d-produkty',
-//       description: 'Personalizované misky pre domácich maznáčikov',
-//       image: '/assets/images/miskaa.png',
-//       alt: 'Misky'
-//     }
-//   ];
-
-//   const itemsSet2 = [
-//     {
-//       title: 'Držiaky na perá',
-//       href: '/3d-produkty',
-//       description: 'Originálny držiak na perá',
-//       image: '/assets/images/penholder.png',
-//       alt: 'Držiak na perá'
-//     },
-//     {
-//       title: 'Držiaky na slúchadlá',
-//       href: '/3d-produkty',
-//       description: 'Praktické držiaky na vaše slúchadlá',
-//       image: '/assets/images/headsetholder.png',
-//       alt: 'Držiaky na slúchadlá'
-//     }
-//   ];
-
-//   // For seamless looping, include the first set again
-//   const groups = [itemsSet1, itemsSet2, itemsSet1];
-
-//   return (
-//     <section className="bg-sectionDark py-16 px-4 sm:px-6 lg:px-20">
-//       <h2 className="text-3xl font-bold text-white text-center mb-14">3D Produkty</h2>
-//       <div className="overflow-hidden relative">
-//         <div className="flex w-[300%] animate-carousel">
-//           {groups.map((set, idx) => (
-//             <div key={idx} className="flex w-1/3 justify-center gap-8">
-//               {set.map(item => (
-//                 <Link
-//                   key={`${item.title}-${idx}`}
-//                   href={item.href}
-//                   className="group bg-[rgba(105,105,105,0.1)] backdrop-blur-[10px] p-6 rounded-lg flex flex-col items-center text-center transition-shadow duration-300]"
-//                 >
-//                   <div className="w-full mb-4">
-//                     <Image
-//                       src={item.image}
-//                       alt={item.alt}
-//                       width={200}
-//                       height={160}
-//                       className="w-full h-auto rounded-md object-contain"
-//                     />
-//                   </div>
-//                   <h3 className="text-xl font-semibold text-white mb-2 break-words">
-//                     {item.title}
-//                   </h3>
-//                   <p className="text-sm text-white break-words">
-//                     {item.description}
-//                   </p>
-//                 </Link>
-//               ))}
-//             </div>
-//           ))}
-//         </div>
-//         <style jsx>{`
-//           @keyframes carousel {
-//             0%, 40% { transform: translateX(0); }
-//             50%, 90% { transform: translateX(-33.333%); }
-//             100% { transform: translateX(-66.666%); }
-//           }
-//           .animate-carousel {
-//             animation: carousel 7s ease-in-out infinite;
-//           }
-//         `}</style>
-//       </div>
-//     </section>
-//   );
-// }
-
-
 // File: components/ThreeDSection.js
 import Image from 'next/image';
 import Link from 'next/link';
@@ -109,7 +16,7 @@ export default function ThreeDSection() {
       title: 'Personalizované misky',
       href: '/3d-produkty',
       description: 'Personalizované misky pre domácich maznáčikov',
-      image: '/assets/images/miskaa.png',
+      image: '/assets/images/argomiska.png',
       imgWidth: 250,
       imgHeight: 180
     },
@@ -117,7 +24,7 @@ export default function ThreeDSection() {
       title: 'Personalizované misky',
       href: '/3d-produkty',
       description: 'Personalizované misky pre domácich maznáčikov',
-      image: '/assets/images/miskaa.png',
+      image: '/assets/images/argomiska.png',
       imgWidth: 250,
       imgHeight: 180
     }
