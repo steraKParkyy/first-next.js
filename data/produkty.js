@@ -3,7 +3,7 @@ export const produkty = [
   {
     nazov: "Personalizovaná miska pre psa",
     slug: "miska-pre-psa",
-    obrazok: "/assets/images/miskaa.PNG",
+    obrazok: "/assets/images/argomiska.png",
     cena: 15,
     farby: ["Biela", "Čierna", "Fialová"],
     velkosti: ["S", "M", "L"],
