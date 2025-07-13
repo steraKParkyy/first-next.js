@@ -53,7 +53,7 @@ export default function GalleryHome() {
         {images.map((img, idx) => (
           <div
             key={idx}
-            className="relative w-full aspect-square max-w-[200px] cursor-pointer"
+            className="relative w-[200px] h-[200px] cursor-pointer"
             onClick={() => openSlider(idx)}
           >
             <Image
@@ -68,12 +68,14 @@ export default function GalleryHome() {
         ))}
       </div>
 
-      <Link href="/gallery" passHref>
-        <button
-          className="mt-14 px-6 py-3 bgpurple text-white rounded-md shadow-md button-glow will-change-transform">
-          Pozrieť celú galériu
-        </button>
-      </Link>
+      <div className="flex justify-center mt-14">
+  <Link href="/gallery" passHref>
+    <button
+      className="px-6 py-3 bgpurple text-white rounded-md shadow-md button-glow will-change-transform">
+      Pozrieť celú galériu
+    </button>
+  </Link>
+</div>
 
 
         {/* light box + slider */}
