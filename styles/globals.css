@@ -26,13 +26,13 @@ html, body {
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8f5bb1", endColorstr="#b7b8b8", GradientType=1 );
 }
 
-.glassefekt {
-  width: 100%;
+.glass-efect {
   inset: 0;
   background: rgba(105, 105, 105, 0.1);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
-  z-index: 999;
+  /* z-index: 999; */
+  border: 1px solid hsla(276, 36%, 53%, 1);
 }
 
   /* skuska BG */
