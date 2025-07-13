@@ -1,0 +1,25 @@
+{
+    "name": "ourmultiverse",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start"
+    },
+    "dependencies": {
+        "@fortawesome/free-brands-svg-icons": "^6.7.2",
+        "@fortawesome/free-solid-svg-icons": "^6.7.2",
+        "@fortawesome/react-fontawesome": "^0.2.2",
+        "framer-motion": "^12.9.2",
+        "lucide-react": "^0.507.0",
+        "next": "latest",
+        "react": "latest",
+        "react-dom": "latest"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.0.0",
+        "postcss": "^8.0.0",
+        "tailwindcss": "^3.0.0"
+    }
+}

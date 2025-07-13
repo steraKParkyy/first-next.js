@@ -1,0 +1,335 @@
+/* File: styles/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+20&family=Lexend:wght@100..900&family=Playwrite+AU+SA:wght@100..400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  /* background: #ADA996; */
+  /* background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #7c7b76);  
+  background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #7c7b76); */
+  background: hsla(276, 36%, 53%, 1);
+  background: linear-gradient(180deg, hsla(276, 36%, 53%, 1) 0%, hsla(180, 1%, 72%, 1) 100%);
+  background: -moz-linear-gradient(180deg, hsla(276, 36%, 53%, 1) 0%, hsla(180, 1%, 72%, 1) 100%);
+  background: -webkit-linear-gradient(180deg, hsla(276, 36%, 53%, 1) 0%, hsla(180, 1%, 72%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8f5bb1", endColorstr="#b7b8b8", GradientType=1 );
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bg-mygr {
+  background: hsla(276, 36%, 53%, 1);
+  background: linear-gradient(180deg, hsla(276, 36%, 53%, 1) 0%, hsla(180, 1%, 72%, 1) 100%);
+  background: -moz-linear-gradient(180deg, hsla(276, 36%, 53%, 1) 0%, hsla(180, 1%, 72%, 1) 100%);
+  background: -webkit-linear-gradient(180deg, hsla(276, 36%, 53%, 1) 0%, hsla(180, 1%, 72%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8f5bb1", endColorstr="#b7b8b8", GradientType=1 );
+}
+
+.obalovacprimary {
+  width: 100%;
+  inset: 0;
+  background: rgba(105, 105, 105, 0.1);
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  backdrop-filter: blur(5px);
+  z-index: 999;
+}
+
+.obalovacsecondary {
+  width: 100%;
+  inset: 0;
+  background: rgba(105, 105, 105, 0.057);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1px);
+  z-index: 0;
+}
+
+
+  /* skuska BG */
+.bgpurple{
+  background: linear-gradient(135deg, #4B0082, #7B3FBF, #8A2BE2);
+}
+
+.bgpurplelight{
+  background: hsla(276, 36%, 53%, 1);
+  background: linear-gradient(270deg, hsla(276, 36%, 53%, 1) 0%, hsla(180, 1%, 72%, 1) 100%);
+  background: -moz-linear-gradient(270deg, hsla(276, 36%, 53%, 1) 0%, hsla(180, 1%, 72%, 1) 100%);
+  background: -webkit-linear-gradient(270deg, hsla(276, 36%, 53%, 1) 0%, hsla(180, 1%, 72%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8F5BB1", endColorstr="#B7B8B8", GradientType=1 );
+}
+
+.bgpurplelightrevers{
+background: hsla(276, 36%, 53%, 1);
+
+background: linear-gradient(90deg, hsla(276, 36%, 53%, 1) 0%, hsla(180, 1%, 72%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(276, 36%, 53%, 1) 0%, hsla(180, 1%, 72%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(276, 36%, 53%, 1) 0%, hsla(180, 1%, 72%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8F5BB1", endColorstr="#B7B8B8", GradientType=1 );
+}
+
+.bgzing{
+  background: #ADA996;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #7c7b76);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #7c7b76); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.mybg {
+  background: #ADA996;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.mybgone {
+  background: #03001e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #fdeff9, #ec38bc, #7303c0, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #fdeff9, #ec38bc, #7303c0, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bgdeepspace {
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.bgmiceelf{
+  background: #948E99;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #2E1437, #948E99);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #2E1437, #948E99); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+      /* Moje štýly */
+/* homepage */
+.text-shadow-black {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.text-shadow-white {
+  text-shadow: 1px 1px 3px rgba(243, 241, 241, 0.664);
+}
+
+section > h1, section > h2, section > button {
+  transition: transform 0.4s ease-out;
+}
+
+.button-glow {
+  /* box-shadow: 0 0 0px 0px rgba(128, 0, 128, 0.7); */
+  transition: box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.button-glow:hover {
+  box-shadow: 0 0 5px 1px rgba(128, 0, 128, 0.9);
+  filter: brightness(1.1);
+}
+
+
+/* kontakt */
+.progress-bar {
+  transition: height 0.7s ease-in;
+}
+
+
+.wave {
+  animation: waveAnimation 4s linear infinite;
+  position: absolute;
+  top: -30px; /* posunie vlnu 8px nad vrch progress baru */
+  left: -100px;
+  width: 150%;
+  height: 50px; /* zvýšená výška */
+  overflow: visible;
+  pointer-events: none;
+  fill: rgba(137, 0, 200, 0.7); /* alebo čo potrebuješ */
+}
+
+@keyframes waveAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(40px);
+  }
+  50% {
+    transform: translateX(70px);
+  }
+  75% {
+    transform: translateX(40px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+
+.wavesection {
+  top: -47px;
+}
+
+.bgHomeSection {
+  background-image: url(/public/assets/images/vesmirnahmla.png) no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+  /* hviezdy */
+
+  .stars {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* aby neprekážali klikom */
+    background: transparent;
+    z-index: 10;
+  }
+
+  /* Hviezdy - malý bod, náhodné polohy cez box-shadow */
+  .stars::before {
+    content: "";
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    box-shadow:
+      10vw 20vh white,
+      30vw 40vh white,
+      50vw 10vh white,
+      70vw 80vh white,
+      90vw 50vh white,
+      25vw 70vh white,
+      60vw 30vh white,
+      80vw 20vh white,
+      40vw 60vh white,
+      55vw 90vh white;
+    animation: twinkle 4s infinite alternate;
+  }
+
+  /* Väčšie hviezdy */
+  .stars::after {
+    content: "";
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 50%;
+    box-shadow:
+      20vw 25vh white,
+      45vw 50vh white,
+      75vw 65vh white,
+      85vw 85vh white;
+    animation: twinkle 5s infinite alternate ease-in-out;
+  }
+
+  @keyframes twinkle {
+    0%   { opacity: 0.3; }
+    100% { opacity: 1; }
+  }
+
+
+/* pohyblive ikony pre WhyMM */
+.rotate {
+  animation: spin 5s linear infinite;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.pencil-draw {
+  animation: draw-pencil 3s infinite;
+}
+@keyframes draw-pencil {
+  0%   { transform: rotate(0deg) translateY(0); }
+  20%  { transform: rotate(-10deg) translateY(2px); }
+  40%  { transform: rotate(0deg) translateY(-2px); }
+  60%  { transform: rotate(0deg) translateY(2px); }
+  80%  { transform: rotate(10deg) translateY(-2px); }
+  100% { transform: rotate(0deg) translateY(0); }
+}
+
+.heartbeat {
+  animation: heartbeat 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  14% { transform: scale(1.1); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.15); }
+  70% { transform: scale(1); }
+  100% { transform: scale(1); }
+}
+
+.shield-bounce {
+  animation: shield-bounce 3s cubic-bezier(0.23, 1, 0.32, 1) infinite;
+}
+@keyframes shield-bounce {
+  0%   { transform: scale(1) translateY(0); }
+  20%  { transform: scale(1.1, 0.9) translateY(-6px); }
+  40%  { transform: scale(0.95, 1.05) translateY(3px); }
+  60%  { transform: scale(1.05, 0.95) translateY(-2px); }
+  80%  { transform: scale(1, 1) translateY(0); }
+  100% { transform: scale(1) translateY(0); }
+}
+
+.handshake-shake {
+  animation: handshake-shake 3s cubic-bezier(0.44, 0.13, 0.48, 0.87) infinite;
+}
+@keyframes handshake-shake {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(-7deg); }
+  30% { transform: rotate(8deg); }
+  45% { transform: rotate(-7deg); }
+  60% { transform: rotate(7deg); }
+  75% { transform: rotate(-4deg); }
+  85% { transform: rotate(4deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.clock-tick {
+  animation: clock-tick 2s cubic-bezier(0.5, 1.7, 0.6, 0.85) infinite;
+}
+@keyframes clock-tick {
+  0%   { transform: rotate(0deg); }
+  20%  { transform: rotate(-11deg);}
+  40%  { transform: rotate(9deg);}
+  60%  { transform: rotate(-6deg);}
+  80%  { transform: rotate(5deg);}
+  100% { transform: rotate(0deg);}
+}
+
+/* trieda scale pre galeriu */
+
+.hover-scale-purple-shadow {
+  transition: transform 0.5s, box-shadow 0.3s;
+}
+.hover-scale-purple-shadow:hover {
+  transform: scale(1.01);
+  box-shadow: 0 2px 24px 0 rgba(137, 0, 200, 0.7); /* alebo svoj fialový odtieň */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
