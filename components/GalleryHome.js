@@ -56,14 +56,25 @@ export default function GalleryHome() {
             className="relative w-[200px] h-[200px] cursor-pointer"
             onClick={() => openSlider(idx)}
           >
-            <Image
+            {/* <Image
               src={img.thumb}
               alt={`Galéria obrázok ${idx + 1}`}
               layout="fill"
               objectFit="cover"
               className="transition-transform duration-300 hover:scale-105 rounded-lg"
               loading="lazy"
-            />
+            /> */}
+
+            {/* V Next.js 13 bola zmenená implementácia komponentu Image. 
+            Staré props ako layout a objectFit sú už zastarané a treba ich nahradiť novými vlastnosťami (napr. style s CSS vlastnosťami). */}
+            <Image
+            src={img.thumb}
+            alt={`Galéria obrázok ${idx + 1}`}
+            fill
+            style={{ objectFit: 'cover' }}
+            className="relative transition-transform duration-300 hover:scale-105 rounded-lg z-50"
+            loading="lazy"
+          />
           </div>
         ))}
       </div>

@@ -1,5 +1,7 @@
 // File: pages/3d-produkty.js
 import Navbar from '../components/Navbar';
+import Products from '../components/Products';
+
 
 export default function Produkty() {
   return (
