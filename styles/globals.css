@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 /* zacal som pouzivat UBUNTU */
+/* skusime codemode kvoli zmenam pri zobrazovani obrazkov */
 html, body {
   background: hsla(276, 36%, 53%, 1);
   background: linear-gradient(180deg, hsla(276, 36%, 53%, 1) 0%, hsla(180, 1%, 72%, 1) 100%);
