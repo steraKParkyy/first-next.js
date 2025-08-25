@@ -127,15 +127,17 @@ export default function Navbar() {
                 <Link
                   href={href}
                   aria-current={active ? "page" : undefined}
-                  className="relative text-white text-shadow-black font-medium outline-none focus-visible:ring-2 focus-visible:ring-accent/60 rounded"
+                  className={`group relative font-medium text-shadow-black outline-none focus-visible:ring-2 focus-visible:ring-accent/60 rounded
+                    ${active ? "text-accent" : "text-white"}`}
                 >
                   {label}
                   <span
-                    className={`absolute bottom-[-3px] left-0 h-0.5 bg-accent transition-all duration-[900ms] motion-reduce:duration-0 origin-left ${
-                      active ? "w-[115%]" : "w-0 group-hover:w-[115%]"
-                    }`}
+                    className="absolute bottom-[-3px] left-0 h-0.5 bg-accent w-0
+                      group-hover:w-[115%] transition-all duration-[900ms] motion-reduce:duration-0 origin-left"
                   />
                 </Link>
+
+
               </li>
             );
           })}
