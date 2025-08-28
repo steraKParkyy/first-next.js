@@ -241,7 +241,7 @@ export default function GalleryHome() {
       {/* Grid: responzívne, bez CLS (aspect-square) */}
       <div
         role="list"
-        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 max-w-[1000px] w-full mx-auto"
+        className="grid grid-cols-2 md:grid-cols-4 gap-2 max-w-[1000px] w-full mx-auto px-4 sm:px-6"
       >
         {images.map((img, idx) => (
           <div key={idx} role="listitem" className="w-full">
