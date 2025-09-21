@@ -19,6 +19,12 @@ html, body {
   font-style: normal;
 }
 
+.bg-homesection {
+  background: url(../public/assets/images/puknutevesmirnesklo.png);
+  background-size: 100% 100%;
+  background-position: fixed;
+}
+
 .bg-mygr {
   background: hsla(276, 36%, 53%, 1);
   background: linear-gradient(180deg, hsla(276, 36%, 53%, 1) 0%, hsla(180, 1%, 72%, 1) 100%);

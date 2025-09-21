@@ -20,18 +20,19 @@ export default function HomeSection() {
 
   return (
     <section
-      style={{ transform: `translateY(${translateY}px)` }}
-      className="inset-0 flex flex-col items-center justify-start text-center pt-20 z-0 px-4 sm:px-6 lg:px-20 h-[90vh] sm:h-screen">
+      // style={{ transform: `translateY(${translateY}px)` }}
+      className="bg-homesection inset-0 flex flex-col items-center justify-start text-center pt-20 z-0 px-4 sm:px-6 lg:px-20 h-[90vh] sm:h-screen">
         {/* <Image
-          src="/assets/images/vesmirnahmlla.png"
+          src="/assets/images/puknutevesmirnesklo.png"
           alt="Pozadie"
           layout="fill"
           objectFit="cover"
           quality={85}
-          className="z-[-1] opacity-80"
+          className="z-[-1] opacity-100"
           priority // (alebo pre "above the fold" sekciu)
         /> */}
-      <div className="mb-0">
+      <div style={{ transform: `translateY(${translateY}px)` }}
+      className="mb-0 pt-20">
         <div className="relative w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] lg:w-[400px] lg:h-[400px]">
           <Image
             src="/assets/images/mm-logo-final-v1.png"
@@ -41,11 +42,13 @@ export default function HomeSection() {
           />
         </div>
       </div>
-      <h1 className="text-4xl tracking-widest text-shadow-black sm:text-5xl lg:text-5xl font-extrabold -mt-10 mb-2 "
+      <h1 style={{ transform: `translateY(${translateYH1}px)` }}
+      className="text-4xl tracking-widest text-shadow-white sm:text-5xl lg:text-5xl font-extrabold -mt-10 mb-2 "
       >
         MY MULTIVERSE
       </h1>
-      <h2 className="mt-0 mb-1 text-2xl sm:text-3xl md:text-3xl font-bold text-white text-shadow-black"
+      <h2 style={{ transform: `translateY(${translateYH2}px)` }}
+      className="mt-0 mb-1 text-2xl sm:text-3xl md:text-3xl font-bold text-white text-shadow-black"
       >
         3D Návrhy a tlač na mieru
       </h2>
