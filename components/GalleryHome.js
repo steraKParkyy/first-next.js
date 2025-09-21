@@ -299,7 +299,7 @@ export default function GalleryHome() {
           <button
             onClick={prevImage}
             aria-label="Predchádzajúci obrázok"
-            className="absolute left-6 md:left-12 text-white text-4xl font-bold hover:text-accent transition select-none"
+            className="absolute z-10 left-6 md:left-12 text-white text-4xl font-bold hover:text-accent transition select-none"
           >
             &#8249;
           </button>
