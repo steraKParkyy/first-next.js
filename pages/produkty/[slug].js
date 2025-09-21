@@ -93,7 +93,7 @@ export default function ProduktPage({ produkt }) {
             </label>
             <button
               type="submit"
-              className="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-900 transition"
+              className="mt-6 px-6 py-3 bgpurple text-white rounded-md shadow-md button-glow will-change-transform"
             >
               Objednať
             </button>

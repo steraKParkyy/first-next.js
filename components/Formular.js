@@ -150,7 +150,7 @@ export default function Formular() {
 
           <button
             type="submit"
-            className="w-full bgpurple text-white py-2 rounded hover:opacity-90 transition border-2 border-black backdrop-blur-[10px]"
+            className="w-full mt-6 px-6 py-3 bgpurple text-white rounded-md shadow-md button-glow will-change-transform"
             disabled={progress < 100}
           >
             {status === 'sent' ? 'Odoslané' : 'Odoslať'}

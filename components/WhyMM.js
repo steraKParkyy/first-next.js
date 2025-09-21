@@ -13,7 +13,7 @@ export default function WhyMM() {
             d="M0,64L60,69.3C120,75,240,85,360,96C480,107,600,117,720,106.7C840,96,960,64,1080,53.3C1200,43,1320,53,1380,58.7L1440,64V0H1380C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0H0Z"></path>
         </svg>
       </div> */}
-      <h2 className="text-3xl sm:text-4xl font-bold text-black text-center text-shadow-black mb-14 mt-4">
+      <h2 className="text-3xl sm:text-4xl sm:px-6 font-bold text-black text-center text-shadow-black mb-14 mt-4">
         Prečo si vybrať MY MULTIVERSE?
       </h2>
 
