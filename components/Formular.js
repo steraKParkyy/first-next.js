@@ -37,7 +37,7 @@ export default function Formular() {
   }
 
   return (
-    <section className=" px-4 pb-16 sm:px-6 lg:px-20 flex flex-col items-center justify-center">
+    <section className=" px-4 pb-16 px-6 lg:px-20 flex flex-col items-center justify-center">
       <h2 className="text-3xl font-bold text-black text-center text-shadow-black mb-14 mt-0">
         Formulár
       </h2>

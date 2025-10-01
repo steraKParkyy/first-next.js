@@ -62,7 +62,7 @@ export default function GalleryHome() {
   }
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 py-16">
+    <section className="min-h-screen flex flex-col items-center justify-center px-4 px-6 py-16">
       <h2 className="text-3xl font-bold text-black text-shadow-black text-center mb-10 mt-4">
         Galéria výtlačkov
       </h2>

@@ -5,7 +5,7 @@ import { faHeart, faSyncAlt, faShieldAlt, faPencilAlt, faClock, faHandshake } fr
 
 export default function OMmWhyMM() {
   return (
-    <section className="bgdeepspace py-10 pb-20 sm:px-6 lg:px-10 relative">
+    <section className="bgdeepspace py-10 pb-20 px-6 lg:px-10 relative">
         <div className="absolute wavesection left-0 w-full pointer-events-none z-10 rotate-180">
             <svg viewBox="0 0 1440 150" className="w-full h-[50px]" preserveAspectRatio="none">
             <path

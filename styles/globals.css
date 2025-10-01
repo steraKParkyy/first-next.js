@@ -171,6 +171,10 @@ section > h1, section > h2, section > button {
   background-position: center;
 }
 
+.bgtextforsmallnav {
+  background-color: #8f5bb1;
+}
+
   /* hviezdy */
 
   .stars {

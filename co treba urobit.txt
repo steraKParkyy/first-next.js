@@ -1,0 +1,2 @@
+- k sekcii homesection treba dorobit nejake postupne zobrazovanie loga a nadpisov tak aby to sedelo s videom na pozadi
+- upravit sekcie tak aby zakryli vodoznak na videu v pravo dole v rohu
