@@ -5,7 +5,7 @@ import { faInstagram, faFacebook, faDiscord } from '@fortawesome/free-brands-svg
 export default function KontaktInfo() {
   return (
     <section className="w-full mx-auto py-20 px-6 text-gray-800 flex flex-col items-center justify-center">
-      <h2 className="text-3xl font-bold text-black text-center text-shadow-black mb-6 mt-4">
+      <h2 className="text-4xl font-bold text-black text-center text-shadow-black mb-16 mt-12">
         Kontakt
       </h2>
       <h3 className="text-xl font-semibold mb-8 text-center">

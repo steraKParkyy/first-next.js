@@ -33,13 +33,25 @@ html, body {
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8f5bb1", endColorstr="#b7b8b8", GradientType=1 );
 }
 
+
+/* pouzite */
 .glass-efect {
   inset: 0;
   background: rgba(105, 105, 105, 0.1);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   /* z-index: 999; */
-  border: 1px solid hsla(276, 36%, 53%, 1);
+  /* border: 1px solid hsla(276, 36%, 53%, 1); */
+  border: 1px solid rgb(0, 0, 0);
+}
+
+/* pouzite */
+.bgtextforsmallnav {
+  background-color: #8f5bb1;
+}
+
+.bgforprodukts {
+  background: hsla(180, 1%, 72%, 1) 100%;
 }
 
   /* skuska BG */
@@ -171,9 +183,7 @@ section > h1, section > h2, section > button {
   background-position: center;
 }
 
-.bgtextforsmallnav {
-  background-color: #8f5bb1;
-}
+
 
   /* hviezdy */
 

@@ -23,7 +23,7 @@ export default function ProduktPage({ produkt }) {
   return (
     <>
     <Navbar />
-    <div className="max-w-full mx-auto py-16 px-20 mt-10 flex flex-col md:flex-row gap-8 items-start">
+    <div className="w-full lg:w-[80%] mx-auto py-16 px-20 mt-10 flex flex-col md:flex-row gap-8 items-start">
       {/* Ľavá strana - obrázok */}
       <div className="flex-1">
         <img
@@ -47,7 +47,7 @@ export default function ProduktPage({ produkt }) {
     <select
       value={velkost}
       onChange={e => setVelkost(e.target.value)}
-      className="block border rounded p-2 w-full mt-1"
+      className="block border rounded p-2 w-full lg:w-[50%] mt-1"
     >
       {produkt.velkosti.map(v => (
         <option key={v} value={v}>{v}</option>
@@ -61,7 +61,7 @@ export default function ProduktPage({ produkt }) {
               <select
                 value={farba}
                 onChange={e => setFarba(e.target.value)}
-                className="block border rounded p-2 w-full mt-1"
+                className="block border rounded p-2 w-full lg:w-[50%] mt-1"
               >
                 {produkt.farby.map(f => (
                   <option key={f} value={f}>{f}</option>
