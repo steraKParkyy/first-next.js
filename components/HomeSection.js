@@ -101,7 +101,7 @@ export default function HomeSection() {
 
       {/* Obsah */}
       <div className="mb-0 pt-20">
-        <div className="relative w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] lg:w-[400px] lg:h-[400px]">
+        <div className="relative w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] lg:w-[400px] lg:h-[400px] scale-Mm">
           <Image
             src="/assets/images/mm-logo-final-v1.png"
             alt="MyMultiverse Logo"
@@ -110,10 +110,10 @@ export default function HomeSection() {
           />
         </div>
       </div>
-      <h1 className="text-4xl tracking-widest text-shadow-white sm:text-5xl lg:text-5xl font-extrabold -mt-10 mb-2 ">
+      <h1 className="text-4xl tracking-widest text-shadow-white sm:text-5xl lg:text-5xl font-extrabold -mt-10 mb-2 glow-Mm">
         MY MULTIVERSE
       </h1>
-      <h2 className="mt-0 mb-1 text-2xl sm:text-3xl md:text-3xl font-bold text-white text-shadow-black">
+      <h2 className="mt-0 mb-1 text-2xl sm:text-3xl md:text-3xl font-bold text-white text-shadow-black fade-in">
         3D Návrhy a tlač na mieru
       </h2>
       <Link href="/gallery" passHref>
