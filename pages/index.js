@@ -25,6 +25,60 @@
 // }
 
 // File: pages/index.js
+// import { useEffect, useState } from 'react';
+// import Navbar from '../components/Navbar';
+// import HomeSection from '../components/HomeSection';
+// import FutureProducts from '../components/FutureProducts';
+// import WhyMM from '../components/WhyMM';
+// import Kontakt from '../components/Formular';
+// import Footer from '../components/Footer';
+// import GalleryHome from '../components/GalleryHome';
+
+// export default function Home() {
+//   const [isLoaded, setIsLoaded] = useState(false);
+
+//   useEffect(() => {
+//     // Funkcia na kontrolu načítania všetkého obsahu
+//     const handleLoad = () => {
+//       setIsLoaded(true);
+//     };
+
+//     if (document.readyState === 'complete') {
+//       // ak je už všetko načítané (napr. refresh)
+//       handleLoad();
+//     } else {
+//       window.addEventListener('load', handleLoad);
+//       return () => window.removeEventListener('load', handleLoad);
+//     }
+//   }, []);
+
+//   return (
+//     <>
+//       {/* LOADER OVERLAY */}
+//       {!isLoaded && (
+//         <div className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-black text-white transition-opacity duration-500">
+//           <div className="h-12 w-12 rounded-full border-4 border-white/40 border-t-white animate-spin mb-6"></div>
+//           <p className="text-lg tracking-wider">Načítavam vesmír MyMultiverse...</p>
+//         </div>
+//       )}
+
+//       {/* HLAVNÝ OBSAH */}
+//       <div className={`transition-opacity duration-700 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
+//         <Navbar />
+//         <main className="relative">
+//           <HomeSection />
+//           <FutureProducts />
+//           <WhyMM />
+//           {/* <Kontakt /> */}
+//           <GalleryHome />
+//           <Footer />
+//         </main>
+//       </div>
+//     </>
+//   );
+// }
+
+// File: pages/index.js
 import { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import HomeSection from '../components/HomeSection';
@@ -35,45 +89,40 @@ import Footer from '../components/Footer';
 import GalleryHome from '../components/GalleryHome';
 
 export default function Home() {
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    // Funkcia na kontrolu načítania všetkého obsahu
-    const handleLoad = () => {
-      setIsLoaded(true);
-    };
-
-    if (document.readyState === 'complete') {
-      // ak je už všetko načítané (napr. refresh)
-      handleLoad();
-    } else {
-      window.addEventListener('load', handleLoad);
-      return () => window.removeEventListener('load', handleLoad);
+    const onLoad = () => setReady(true);
+    if (document.readyState === 'complete') setReady(true);
+    else {
+      window.addEventListener('load', onLoad, { once: true });
+      return () => window.removeEventListener('load', onLoad);
     }
   }, []);
 
+  // Kým nie je všetko načítané, renderuj len loader (žiadny obsah).
+  if (!ready) {
+    return (
+      <div className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-black text-white">
+        <div className="h-12 w-12 rounded-full border-4 border-white/40 border-t-white animate-spin mb-6" />
+        <p className="text-lg tracking-wider">Načítavam…</p>
+      </div>
+    );
+  }
+
+  // Až po window.load sa vyrenderuje celá stránka (všetko sa spúšťa až teraz)
   return (
     <>
-      {/* LOADER OVERLAY */}
-      {!isLoaded && (
-        <div className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-black text-white transition-opacity duration-500">
-          <div className="h-12 w-12 rounded-full border-4 border-white/40 border-t-white animate-spin mb-6"></div>
-          <p className="text-lg tracking-wider">Načítavam vesmír MyMultiverse...</p>
-        </div>
-      )}
-
-      {/* HLAVNÝ OBSAH */}
-      <div className={`transition-opacity duration-700 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
-        <Navbar />
-        <main className="relative">
-          <HomeSection />
-          <FutureProducts />
-          <WhyMM />
-          {/* <Kontakt /> */}
-          <GalleryHome />
-          <Footer />
-        </main>
-      </div>
+      <Navbar />
+      <main className="relative">
+        <HomeSection />
+        <FutureProducts />
+        <WhyMM />
+        {/* <Kontakt /> */}
+        <GalleryHome />
+        <Footer />
+      </main>
     </>
   );
 }
+
