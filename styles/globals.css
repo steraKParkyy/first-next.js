@@ -113,124 +113,101 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8F5BB1", en
 
       /* Moje štýly */
 /* homepage */
-.text-shadow-black {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-}
+    .text-shadow-black {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    }
 
-.text-shadow-white {
-  text-shadow: 1px 1px 3px rgba(243, 241, 241, 0.664);
-}
+    .text-shadow-white {
+      text-shadow: 1px 1px 3px rgba(243, 241, 241, 0.664);
+    }
 
-section > h1, section > h2, section > button {
-  transition: transform 0.4s ease-out;
-}
+    section > h1, section > h2, section > button {
+      transition: transform 0.4s ease-out;
+    }
 
-.button-glow {
-  /* box-shadow: 0 0 0px 0px rgba(128, 0, 128, 0.7); */
-  transition: box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out;
-}
+    .button-glow {
+      /* box-shadow: 0 0 0px 0px rgba(128, 0, 128, 0.7); */
+      transition: box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out;
+    }
 
-.button-glow:hover {
-  box-shadow: 0 0 5px 1px rgba(128, 0, 128, 0.9);
-  filter: brightness(1.1);
-}
+    .button-glow:hover {
+      box-shadow: 0 0 5px 1px rgba(128, 0, 128, 0.9);
+      filter: brightness(1.1);
+    }
 
-/* nastup loga a nadpisu na home page */
-.fadeInMm {
-  opacity: 0;
-  animation: fadeIn 4s ease-in-out 2s forwards;
-}
+  /* nastup loga a nadpisu na home page */
+    /* logo */
+    .scale-Mm {
+      opacity: 0;
+      transform: scale(0); /* začína menšie */
+      animation: fadeInZoom 3.5s ease-out 1s forwards;
+    }
 
-@keyframes fadeIn {
-  /* from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  } */
-  0% {
-    opacity: 0;
-    filter: brightness(1);
-  }
-  70% {
-    opacity: 1;
-    filter: brightness(1);
-  }
-  85%{
-    opacity: 1;
-    filter: brightness(2);
-  }
-  100%{
-    opacity: 1;
-    filter: brightness(1);
-  }
+    @keyframes fadeInZoom {
+      0% {
+        opacity: 0;
+        transform: scale(0);
+      }
+      
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
 
+    }
+    /* h1 */
+    .glow-Mm {
+      opacity: 0;
+      animation: glowText 4.5s ease-out 2s forwards;
+    }
 
-}
-/* logo */
-.scale-Mm {
-  opacity: 0;
-  transform: scale(0); /* začína menšie */
-  animation: fadeInZoom 3.5s ease-out 1s forwards;
-}
+    @keyframes glowText {
+      0% {
+        opacity: 0;
+        text-shadow: 0 0 0px rgba(255, 255, 255, 0);
+      }
+      70% {
+        opacity: 1;
+        text-shadow: 0 0 0px rgba(255, 255, 255, 0);
+      }
+      85% {
+        opacity: 1;
+        text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+      }
+      100% {
+        opacity: 1;
+        text-shadow: 0 0 0px rgba(255, 255, 255, 0);
+      }
+    }
+    /* h2 */
+    .fade-in{
+      opacity:0;
+      animation: fade 4.5s ease-out 2s forwards;
+    }
+    @keyframes fade {
+      from{
+        opacity: 0;
+      }
+      to{
+        opacity: 1;
+      }
+    }
 
-@keyframes fadeInZoom {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-  
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-
-}
-/* h1 */
-.glow-Mm {
-  opacity: 0;
-  animation: glowText 4s ease-out 2s forwards;
-}
-
-@keyframes glowText {
-  0% {
-    opacity: 0;
-    text-shadow: 0 0 0px rgba(255, 255, 255, 0);
-  }
-  70% {
-    opacity: 1;
-    text-shadow: 0 0 0px rgba(255, 255, 255, 0);
-  }
-  85% {
-    opacity: 1;
-    text-shadow: 0 0 20px rgba(255, 255, 255, 1);
-  }
-  100% {
-    opacity: 1;
-    text-shadow: 0 0 0px rgba(255, 255, 255, 0);
-  }
-}
-/* h2 */
-.fade-in{
-  opacity:0;
-  animation: glowText 4s ease-out 2s forwards;
-}
-@keyframes fade {
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-}
+    /* kontakt */
+    .progress-bar {
+      transition: height 0.7s ease-in;
+    }
 
 
+  /* OMmWhyMM */
+    /* frame */
+    .wow-frame {
+      background: url("/assets/images/wowframepurple2.png") center no-repeat;
+      background-size: 110% 240%;
+      padding-top: 85px;
+      padding-bottom: 120px;
+    }
 
-
-/* kontakt */
-.progress-bar {
-  transition: height 0.7s ease-in;
-}
 
 
 .wave {
@@ -273,8 +250,6 @@ section > h1, section > h2, section > button {
   background-size: 100%;
   background-position: center;
 }
-
-
 
   /* hviezdy */
 
@@ -417,9 +392,45 @@ section > h1, section > h2, section > button {
 }
 
 
+/* media query */
 
+@media (max-width: 1280px) {
+  .wow-frame {
+    padding-top: 90px;
+  }
+}
 
+@media (max-width: 1140px) {
+  .wow-frame {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
 
+@media (max-width: 1129px) {
+  .wow-frame {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 630px) {
+  .wow-frame {
+    padding-top: 100px;
+    padding-bottom: 140px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media (max-width: 530px) {
+  .wow-frame {
+    padding-top: 110px;
+    padding-bottom: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
 
 
 

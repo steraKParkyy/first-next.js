@@ -7,6 +7,7 @@ import { faInstagram, faFacebook, faDiscord, faYoutube } from '@fortawesome/free
 export default function Footer({ bgColor = 'bgzing' }) {
   return (
     <footer className="text-xs text-black py-10 px-20">
+      <hr className="border-gray-700 my-4" />
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Logo + tagline */}
         <div>
@@ -19,10 +20,10 @@ export default function Footer({ bgColor = 'bgzing' }) {
           <h4 className="text-lg font-semibold text-white mb-2">Odkazy</h4>
           <ul className="space-y-1 text-sm">
             <li><Link href="/" className="hover:text-accent">Home</Link></li>
-            <li><Link href="/3d-produkty" className="hover:text-accent">3D Produkty</Link></li>
+            <li><Link href="/produkty" className="hover:text-accent">3D Produkty</Link></li>
             <li><Link href="/gallery" className="hover:text-accent">Galéria</Link></li>
             <li><Link href="/kontakt" className="hover:text-accent">Kontakt</Link></li>
-            <li><Link href="/o-mm" className="hover:text-accent">o MM</Link></li>
+            <li><Link href="/aboutmm" className="hover:text-accent">o MM</Link></li>
           </ul>
         </div>
 
@@ -33,12 +34,12 @@ export default function Footer({ bgColor = 'bgzing' }) {
             {/* <Link href="https://www.youtube.com/@ster4x" target="blank" className="hover:text-accent">
               <FontAwesomeIcon icon={faYoutube} size="lg" />
             </Link> */}
-            <Link href="https://www.instagram.com/ster4x_mm/" target="blank" className="hover:text-accent">
+            <Link href="https://www.instagram.com/mymultiverse_mm/" target="blank" className="hover:text-accent">
               <FontAwesomeIcon icon={faInstagram} size="lg" />
             </Link>
-            <Link href="https://www.facebook.com/ster4x" target="blank" className="hover:text-accent">
+            {/* <Link href="https://www.facebook.com/ster4x" target="blank" className="hover:text-accent">
               <FontAwesomeIcon icon={faFacebook} size="lg" />
-            </Link>
+            </Link> */}
             {/* <Link href="https://discord.gg/tvojodkaz" target="blank" className="hover:text-accent">
               <FontAwesomeIcon icon={faDiscord} size="lg" />
             </Link> */}

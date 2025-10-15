@@ -16,8 +16,9 @@ export default function OMmWhyMM() {
         <h2 className="text-3xl sm:text-4xl font-bold text-white text-center text-shadow-white mb-8 mt-4">
             Prečo si vybrať MY MULTIVERSE?
         </h2>
-        <div className="max-w-3xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-10 text-white">
-            <div className="flex items-start space-x-4">
+        {/* <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-10 text-white"> */}
+        <div className="max-w-7xl mx-auto grid grid-cols-1 [@media(min-width:1130px)]:grid-cols-2 gap-10 text-white">
+            <div className="wow-frame flex items-start space-x-4 px-16 py-6">
             <FontAwesomeIcon icon={faHeart} className="text-accent text-5xl mt-1 heartbeat" />
             <div>
                 <h3 className="text-xl font-semibold text-shadow-white"> Vášeň a osobný prístup</h3>
@@ -29,7 +30,7 @@ export default function OMmWhyMM() {
             </div>
             </div>
 
-            <div className="flex items-start space-x-4">
+            <div className="wow-frame flex items-start space-x-4 px-16 py-6">
             <FontAwesomeIcon icon={faSyncAlt} className="text-accent text-5xl mt-1 rotate" />
             <div>
                 <h3 className="text-xl font-semibold text-shadow-white"> Neustále zlepšovanie a inovácia</h3>
@@ -40,7 +41,7 @@ export default function OMmWhyMM() {
             </div>
             </div>
 
-            <div className="flex items-start space-x-4">
+            <div className="wow-frame flex items-start space-x-4 px-16 py-6">
             <FontAwesomeIcon icon={faShieldAlt} className="text-accent text-5xl mt-1 shield-bounce" />
             <div>
                 <h3 className="text-xl font-semibold text-shadow-white"> Kvalita na prvom mieste</h3>
@@ -51,7 +52,7 @@ export default function OMmWhyMM() {
             </div>
             </div>
 
-            <div className="flex items-start space-x-4">
+            <div className="wow-frame flex items-start space-x-4 px-16 py-6">
             <FontAwesomeIcon icon={faPencilAlt} className="text-accent text-5xl mt-1 pencil-draw" />
             <div>
                 <h3 className="text-xl font-semibold text-shadow-white"> Návrhy šité na mieru</h3>
@@ -62,7 +63,7 @@ export default function OMmWhyMM() {
             </div>
             </div>
             
-            <div className="flex items-start space-x-4">
+            <div className="wow-frame flex items-start space-x-4 px-16 py-6">
             <FontAwesomeIcon icon={faClock} className="text-accent text-5xl mt-1 clock-tick" />
             <div>
                 <h3 className="text-xl font-semibold text-shadow-white"> Rýchla a spoľahlivá výroba</h3>
@@ -72,7 +73,7 @@ export default function OMmWhyMM() {
                 </p>
             </div>
             </div>
-            <div className="flex items-start space-x-4">
+            <div className="wow-frame flex items-start space-x-4 px-16 py-6">
                 <FontAwesomeIcon icon={faHandshake} className="text-accent text-5xl mt-1 handshake-shake" />
                 <div>
                     <h3 className="text-xl font-semibold text-shadow-white"> Osobný prístup</h3>

@@ -4,7 +4,7 @@ import { faInstagram, faFacebook, faDiscord } from '@fortawesome/free-brands-svg
 
 export default function KontaktInfo() {
   return (
-    <section className="w-full mx-auto py-20 px-6 text-gray-800 flex flex-col items-center justify-center">
+    <section className="w-full mx-auto py-20 px-6 text-gray-800 flex flex-col items-center justify-center bgdeepspace">
       <h2 className="text-4xl font-bold text-black text-center text-shadow-black mb-16 mt-12">
         Kontakt
       </h2>
@@ -22,16 +22,16 @@ export default function KontaktInfo() {
         <div className="group inline-flex w-max items-center space-x-3 hover:text-accent transition-colors duration-300">
           <FontAwesomeIcon icon={faInstagram} className="w-6 h-6 text-black group-hover:text-accent transition-colors duration-300" />
           <a
-            href="https://www.instagram.com/ster4x_mm/"
+            href="https://www.instagram.com/mymultiverse_mm/"
             target="_blank"
             rel="noreferrer"
         
           >
-            ster4x_mm
+            mymultiverse_mm
           </a>
         </div>
 
-        <div className="group inline-flex w-max items-center space-x-3 hover:text-accent transition-colors duration-300">
+        {/* <div className="group inline-flex w-max items-center space-x-3 hover:text-accent transition-colors duration-300">
           <FontAwesomeIcon icon={faFacebook} className="w-6 h-6 text-black group-hover:text-accent transition-colors duration-300" />
           <a
             href="https://www.facebook.com/ster4x/"
@@ -41,7 +41,7 @@ export default function KontaktInfo() {
           >
             Marek Marguš
           </a>
-        </div>
+        </div> */}
 
         <div className="group inline-flex w-max items-center space-x-3 hover:text-accent transition-colors duration-300">
           <FontAwesomeIcon icon={faPhone} className="w-6 h-6 text-black group-hover:text-accent transition-colors duration-300" />

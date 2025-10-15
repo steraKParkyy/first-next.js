@@ -117,7 +117,7 @@ export default function HomeSection() {
         3D Návrhy a tlač na mieru
       </h2>
       <Link href="/gallery" passHref>
-        <button className="mt-6 px-6 py-3 bgpurple text-white rounded-md shadow-md button-glow">
+        <button className="mt-6 px-6 py-3 bgpurple text-white rounded-md shadow-md button-glow fade-in">
           Pozrieť galériu
         </button>
       </Link>
