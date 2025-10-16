@@ -38,9 +38,9 @@ export default function Formular() {
 
   return (
     <section className=" px-4 pb-16 px-6 lg:px-20 flex flex-col items-center justify-center">
-      <h2 className="text-3xl font-bold text-black text-center text-shadow-black mb-14 mt-0">
+      <h1 className="text-4xl font-bold text-black text-center text-shadow-black pb-14 pt-16">
         Formulár
-      </h2>
+      </h1>
 
       <div className="relative w-full max-w-md rounded-lg overflow-hidden shadow-md">
         {/* Progress bar pozadia s animovanou vlnou */}

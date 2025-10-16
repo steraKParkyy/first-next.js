@@ -63,9 +63,9 @@ export default function GalleryHome() {
 
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-4 px-6 py-16">
-      <h2 className="text-3xl font-bold text-black text-shadow-black text-center mb-10 mt-4">
+      <h1 className="text-4xl font-bold text-black text-shadow-black text-center mb-10 mt-4">
         Galéria výtlačkov
-      </h2>
+      </h1>
 
       {/* Výber galérie */}
       {!openGallery && (

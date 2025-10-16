@@ -24,7 +24,7 @@ export default function OMmWhyMM() {
             <div>
                 <h3 className="text-xl font-semibold text-shadow-white"> Vášeň a osobný prístup</h3>
                 <p>
-                Robím to, čo ma baví, a dávam do toho celé svoje srdce a čas.
+                Robím to, čo ma baví, a to je základ!
                 MyMultiverse nie je pásová výroba – každý výrobok je jedinečný
                 a vytvorený s láskou.
                 </p>
@@ -48,7 +48,7 @@ export default function OMmWhyMM() {
                 <h3 className="text-xl font-semibold text-shadow-white"> Kvalita na prvom mieste</h3>
                 <p>
                 Každý 3D výrobok vyrábam s maximálnou starostlivosťou a precíznosťou,
-                aby výrobok presne spĺňal tvoje požiadavky.
+                aby výrobok presne spĺňal vaše požiadavky.
                 </p>
             </div>
             </div>

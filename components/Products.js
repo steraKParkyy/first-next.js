@@ -7,10 +7,10 @@ import Link from 'next/link';
 export default function Products() {
   return (
     <main className="relative pt-16 pb-16 flex flex-col items-center bgdeepspace">
-        <h1 className="text-4xl font-bold text-black text-center text-shadow-black mb-16 mt-12">MM produkty</h1>
+        <h1 className="text-4xl font-bold text-black text-center text-white pb-16 pt-12">MM produkty</h1>
         <div className=" grid md:grid-cols-2 lg:grid-cols-3 gap-8 px-8 pb-16">
           {produkty.map((produkt, idx) => (
-            <div key={idx} className="glass-efect rounded-xl p-4 flex flex-col items-center">
+            <div key={idx} className="glass-efect bgproducts text-white rounded-xl p-4 flex flex-col items-center">
               <img src={produkt.obrazok} alt={produkt.nazov} className="w-full h-40 object-contain rounded-lg mb-2" />
               <h2 className="text-lg font-semibold mb-1">{produkt.nazov}</h2>
               <p className="mb-2">{produkt.cena} €</p>
