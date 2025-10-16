@@ -5,7 +5,7 @@ import { faHeart, faSyncAlt, faShieldAlt, faPencilAlt, faClock, faHandshake } fr
 
 export default function OMmWhyMM() {
   return (
-    <section className="bgdeepspace py-10 pb-20 px-6 lg:px-10 relative">
+    <section className="bgdeepspace py-10 pb-20 px-0 sm:px-6 lg:px-10 relative">
         <div className="absolute wavesection left-0 w-full pointer-events-none z-10 rotate-180">
             <svg viewBox="0 0 1440 150" className="w-full h-[50px]" preserveAspectRatio="none">
             <path
@@ -18,7 +18,8 @@ export default function OMmWhyMM() {
         </h2>
         {/* <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-10 text-white"> */}
         <div className="max-w-7xl mx-auto grid grid-cols-1 [@media(min-width:1130px)]:grid-cols-2 gap-10 text-white">
-            <div className="wow-frame flex items-start space-x-4 px-16 py-6">
+            {/* <div className="wow-frame flex items-start space-x-4 px-16 py-6"> */}
+            <div className="wow-frame flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left space-y-4 sm:space-y-0 sm:space-x-4 px-16 py-6">
             <FontAwesomeIcon icon={faHeart} className="text-accent text-5xl mt-1 heartbeat" />
             <div>
                 <h3 className="text-xl font-semibold text-shadow-white"> Vášeň a osobný prístup</h3>
@@ -30,7 +31,7 @@ export default function OMmWhyMM() {
             </div>
             </div>
 
-            <div className="wow-frame flex items-start space-x-4 px-16 py-6">
+            <div className="wow-frame flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left space-y-4 sm:space-y-0 sm:space-x-4 px-16 py-6">
             <FontAwesomeIcon icon={faSyncAlt} className="text-accent text-5xl mt-1 rotate" />
             <div>
                 <h3 className="text-xl font-semibold text-shadow-white"> Neustále zlepšovanie a inovácia</h3>
@@ -41,7 +42,7 @@ export default function OMmWhyMM() {
             </div>
             </div>
 
-            <div className="wow-frame flex items-start space-x-4 px-16 py-6">
+            <div className="wow-frame flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left space-y-4 sm:space-y-0 sm:space-x-4 px-16 py-6">
             <FontAwesomeIcon icon={faShieldAlt} className="text-accent text-5xl mt-1 shield-bounce" />
             <div>
                 <h3 className="text-xl font-semibold text-shadow-white"> Kvalita na prvom mieste</h3>
@@ -52,7 +53,7 @@ export default function OMmWhyMM() {
             </div>
             </div>
 
-            <div className="wow-frame flex items-start space-x-4 px-16 py-6">
+            <div className="wow-frame flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left space-y-4 sm:space-y-0 sm:space-x-4 px-16 py-6">
             <FontAwesomeIcon icon={faPencilAlt} className="text-accent text-5xl mt-1 pencil-draw" />
             <div>
                 <h3 className="text-xl font-semibold text-shadow-white"> Návrhy šité na mieru</h3>
@@ -63,7 +64,7 @@ export default function OMmWhyMM() {
             </div>
             </div>
             
-            <div className="wow-frame flex items-start space-x-4 px-16 py-6">
+            <div className="wow-frame flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left space-y-4 sm:space-y-0 sm:space-x-4 px-16 py-6">
             <FontAwesomeIcon icon={faClock} className="text-accent text-5xl mt-1 clock-tick" />
             <div>
                 <h3 className="text-xl font-semibold text-shadow-white"> Rýchla a spoľahlivá výroba</h3>
@@ -73,7 +74,7 @@ export default function OMmWhyMM() {
                 </p>
             </div>
             </div>
-            <div className="wow-frame flex items-start space-x-4 px-16 py-6">
+            <div className="wow-frame flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left space-y-4 sm:space-y-0 sm:space-x-4 px-16 py-6">
                 <FontAwesomeIcon icon={faHandshake} className="text-accent text-5xl mt-1 handshake-shake" />
                 <div>
                     <h3 className="text-xl font-semibold text-shadow-white"> Osobný prístup</h3>

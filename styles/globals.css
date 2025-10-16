@@ -425,6 +425,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8F5BB1", en
 
 @media (max-width: 530px) {
   .wow-frame {
+    background-size: 110% 265%;
     padding-top: 110px;
     padding-bottom: 150px;
     padding-left: 50px;
