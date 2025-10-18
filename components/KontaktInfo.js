@@ -4,14 +4,14 @@ import { faInstagram, faFacebook, faDiscord } from '@fortawesome/free-brands-svg
 
 export default function KontaktInfo() {
   return (
-    <section className="w-full mx-auto py-20 px-6 text-gray-800 flex flex-col items-center justify-center bgdeepspace">
-      <h1 className="text-4xl font-bold text-black text-center text-white pb-16 pt-12">
+    <section className="w-full mx-auto py-20 px-6 text-gray-800 flex flex-col items-center justify-center">
+      <h1 className="text-4xl font-bold text-black text-center text-black pb-16 pt-12">
         Kontakt
       </h1>
-      <h3 className="text-xl font-semibold mb-8 text-center text-white">
+      <h3 className="text-xl font-semibold mb-8 text-center text-black">
         Napíš, alebo mi pošli tvoju predstavu, rád pomôžem s tvojím projektom.
       </h3>
-      <div className="space-y-0 text-lg w-full max-w-md flex flex-col items-center justify-center text-white">
+      <div className="space-y-0 text-lg w-full max-w-md flex flex-col items-center justify-center text-black">
         <div className="group inline-flex w-max items-center space-x-3 hover:text-accent transition-colors duration-300">
           <FontAwesomeIcon icon={faEnvelope} className="w-6 h-6 text-white group-hover:text-accent transition-colors duration-300" />
           <a href="mailto:mymultivers@gmail.com">
